@@ -70,6 +70,7 @@ For more information on Apache Gluten, including related articles and videos, pl
 |Accelerating Large-Scale Data Analytics with GPU-Native Velox and NVIDIA cuDF|NVIDIA Developer Blog||Gregory Kimball, Zoltán Arnold Nagy, Devavret Makkar, Daniel Bauer and Chengcheng Jin|[Link](https://developer.nvidia.com/blog/accelerating-large-scale-data-analytics-with-gpu-native-velox-and-nvidia-cudf/)|
 |Unleash Lightning-Fast Data Processing in Apache Spark with Gluten and Arrow|Medium||Achyut Kumar|[Link](https://medium.com/@achyutkumar400/unleash-lightning-fast-data-processing-in-apache-spark-with-gluten-and-arrow-3fa13daf41aa)|
 |Gluten: Modernizing Java-based Query Engines|VLDB|VLDB|Akash Shankaran, George Gu, Weiting Chen, Binwei Yang, Chidamber Kulkarni, Mark Rambacher, Nesime Tatbul and David E. Cohen|[Link](https://ceur-ws.org/Vol-3462/CDMS8.pdf)|
+|2-for-1 Real-Time Architectures, Real Fast: Fueling Fast Data – Apache Gluten and the Next Gen of Spark Performance|All Things Open 2025||Binwei Yang and Chengcheng Jin|[Link](https://2025.allthingsopen.org/sessions/2-for-1-real-time-architectures-real-fast-fueling-fast-data-apache-gluten-and-the-next-gen-of-spark-performance)|
 
 
 
