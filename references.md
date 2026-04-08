@@ -46,16 +46,32 @@ For more information on Apache Gluten, including related articles and videos, pl
 |Xiaohongshu's Native Engine Technology Progress and Production Practices (in Chinese)|Xiaohongshu|Dec. 2025|[Link](https://bytedance.us.larkoffice.com/minutes/obusplle2j6t88vmw7dm769o)|
 |Engineering practices of accelerating Spark using Gluten and Velox at Xiaomi (in Chinese)|Xiaomi|Dec. 2025|[Link](https://bytedance.us.larkoffice.com/minutes/obuspk636n4cm2h3c1vjm63l)|
 |Enable AI with enterprise data using new IBM watsonx.data features on AWS|IBM|Dec. 2025|[Link](https://aws.amazon.com/blogs/ibm-redhat/enable-ai-with-enterprise-data-using-new-ibm-watsonx-data-features-on-aws/)|
-|Spark Native Execution Engine - Quick Tips|Microsoft|Mar. 2026|[Link](https://www.youtube.com/watch?v=RAD3mhTqnZI)|
-|Accelerating Spark in Microsoft Fabric: Native Execution and Beyond|Microsoft|Mar. 2026|[Link](https://www.youtube.com/watch?v=tAhnOsyFrF0)|
-|Boost Performance with Fabric's Native Execution Engine|Microsoft|Mar. 2026|[Link](https://www.youtube.com/watch?v=MNJ0XtPsNa8)|
-|Native execution engine for Apache Spark in Fabric|Microsoft|Mar. 2026|[Link](https://www.youtube.com/watch?v=8GJj4QlFlsw)|
-|Apache Gluten: Revolutionizing Big Data Processing Efficiency|IBM|Mar. 2026|[Link](https://www.youtube.com/watch?v=21dAy6rH2jQ)|
+|Spark Native Execution Engine - Quick Tips|Microsoft|Oct. 2024|[Link](https://www.youtube.com/watch?v=RAD3mhTqnZI)|
+|Accelerating Spark in Microsoft Fabric: Native Execution and Beyond|Microsoft|May. 2025|[Link](https://www.youtube.com/watch?v=tAhnOsyFrF0)|
+|Boost Performance with Fabric's Native Execution Engine|Microsoft|Feb. 2025|[Link](https://www.youtube.com/watch?v=MNJ0XtPsNa8)|
+|Native execution engine for Apache Spark in Fabric|Microsoft|Jul. 2024|[Link](https://www.youtube.com/watch?v=8GJj4QlFlsw)|
+|Apache Gluten: Revolutionizing Big Data Processing Efficiency|IBM|May. 2025|[Link](https://www.youtube.com/watch?v=21dAy6rH2jQ)|
 |Real World Applications of Velox and Apache Gluten in Dataproc’s NQE|Google|Apr. 2025|[Link](https://www.youtube.com/watch?v=c2V0jWR8xh8)|
-|Big Data Bellevue: Apache Gluten: Accelerating SparkSQL with Spark on Velox|BDB|Mar. 2026|[Link](https://www.youtube.com/watch?v=GWTj3INSzPg)|
-|Learn Apache Gluten & Apache Iceberg \| Featuring Rui Mo (IBM) & Soumil Shah Zeta Global|IBM|Mar. 2026|[Link](https://www.youtube.com/watch?v=MIO4UZuDT9M)|
+|Big Data Bellevue: Apache Gluten: Accelerating SparkSQL with Spark on Velox|BDB|Jan. 2025|[Link](https://www.youtube.com/watch?v=GWTj3INSzPg)|
+|Learn Apache Gluten & Apache Iceberg \| Featuring Rui Mo (IBM) & Soumil Shah Zeta Global|IBM|Feb. 2026|[Link](https://www.youtube.com/watch?v=MIO4UZuDT9M)|
 |Accelerating Spark at Microsoft using Gluten & Velox - Swinky Mann and Zhen Li|Microsoft|Apr. 2024|[Link](https://www.youtube.com/watch?v=7pXOAjSITYs)|
-|Apache Spark \| Gluten \| Velox \| Substrait \| Arrow\|Community| NA |Mar. 2026|[Link](https://www.youtube.com/watch?v=pJED_tZNeMY)|
+|Apache Spark \| Gluten \| Velox \| Substrait \| Arrow\|Community| NA |Dec. 2025|[Link](https://www.youtube.com/watch?v=pJED_tZNeMY)|
+|Under the Hood: An Introduction to the Native Execution Engine for Microsoft Fabric|Microsoft|Feb. 2026|[Link](https://blog.fabric.microsoft.com/en-us/blog/under-the-hood-an-introduction-to-the-native-execution-engine-for-microsoft-fabric?ft=Onelake:category)|
+
+# Media References
+
+| Title | Platform | Publication | Author | Reference |
+|-------------------|---------|--------------|---------|-----------------|
+|Accelerating Apache Spark with Gluten & Velox|Medium |  | Angel Conde|[Link](https://medium.com/@neuw84/accelerating-apache-spark-with-gluten-velox-3529c4235632)|
+|Accelerate Spark SQL queries with Gluten|Medium | Intel Analytics Software | Weiting Chen |[Link](https://medium.com/intel-analytics-software/accelerate-spark-sql-queries-with-gluten-9000b65d1b4e)|
+|Apache Spark Native Engine|Medium | Apache Kyuubi | Apache Kyuubi |[Link](https://medium.com/@KyuubiApache/apache-spark-native-engine-3e1060567ed0)|
+|Native Spark Engine on watsonx.data on Cloud Pak for Data (CPD) using CAS feature|Medium |  | Mrudula Madiraju |[Link](https://medium.com/@mrudulamadiraju/native-spark-engine-on-watsonx-data-on-cloud-pak-for-data-cpd-using-cas-feature-5946566ec147)|
+|Velox Native Accelerator Engine|Medium | Dev Genius | Amit Singh Rathore |[Link](https://blog.devgenius.io/velox-native-accelerator-engine-065be2a2f45e)|
+|Accelerating Large-Scale Data Analytics with GPU-Native Velox and NVIDIA cuDF|NVIDIA Developer Blog||Gregory Kimball, Zoltán Arnold Nagy, Devavret Makkar, Daniel Bauer and Chengcheng Jin|[Link](https://developer.nvidia.com/blog/accelerating-large-scale-data-analytics-with-gpu-native-velox-and-nvidia-cudf/)|
+|Unleash Lightning-Fast Data Processing in Apache Spark with Gluten and Arrow|Medium||Achyut Kumar|[Link](https://medium.com/@achyutkumar400/unleash-lightning-fast-data-processing-in-apache-spark-with-gluten-and-arrow-3fa13daf41aa)|
+|Gluten: Modernizing Java-based Query Engines|VLDB|VLDB|Akash Shankaran, George Gu, Weiting Chen, Binwei Yang, Chidamber Kulkarni, Mark Rambacher, Nesime Tatbul and David E. Cohen|[Link](https://ceur-ws.org/Vol-3462/CDMS8.pdf)|
+
+
 
 # Related Documentation
 
