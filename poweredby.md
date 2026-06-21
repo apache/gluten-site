@@ -36,3 +36,4 @@ Sorted by Company Name
 | Uber | Uber's Spark Data Platform has been using Gluten since 2024 to reduce compute costs and improve query efficiency. | [Link](https://veloxcon.io/agenda/) |
 | DataPelago | DataPelago Accelerator for Spark — the next frontier in Spark performance and efficiency |[Link](https://www.datapelago.io/resources/announcing-datapelago-accelerator)|
 | acceldata | Acceldata's ODP (Opensource Data Platform)'s Spark is powered by Gluten-Velox) |[Link](https://www.acceldata.io/whitepaper/odp-spark-with-gluten-velox)|
+| Zhihu | Zhihu’s Practice of Optimizing Spark Jobs with Gluten |[Link](https://zhuanlan.zhihu.com/p/2050581137496302588)|
