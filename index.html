@@ -1,0 +1,204 @@
+---
+layout: base
+title: Home
+permalink: /
+nav_exclude: true
+description: Apache Gluten is a middle layer that offloads JVM-based SQL engines' execution to native engines such as Velox and ClickHouse, doubling SparkSQL's performance.
+---
+
+<!-- Hero -->
+<section class="hero">
+  <div class="hero-content">
+    <span class="hero-badge">🚀 Apache Top-Level Project</span>
+    <h1>Supercharge SparkSQL with Native Execution</h1>
+    <p>Apache Gluten is a middle layer that offloads JVM-based SQL engines to native engines like Velox and ClickHouse — delivering up to 3x+ performance with zero query changes.</p>
+    <div class="hero-buttons">
+      <a href="https://apache.github.io/gluten/" class="btn btn-primary">Get Started</a>
+      <a href="https://github.com/apache/gluten" class="btn btn-secondary" target="_blank" rel="noopener">
+        <svg width="18" height="18" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+        View on GitHub
+      </a>
+      <a href="/downloads/" class="btn btn-secondary">Downloads</a>
+    </div>
+  </div>
+</section>
+
+<!-- Stats -->
+<section class="section-alt">
+  <div class="container">
+    <div class="stats">
+      <div class="stat-item">
+        <div class="stat-number">3.3x</div>
+        <div class="stat-label">TPC-H Speedup</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">3.0x</div>
+        <div class="stat-label">TPC-DS Speedup</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">23x</div>
+        <div class="stat-label">Max Single-Query Speedup</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">15+</div>
+        <div class="stat-label">Production Adopters</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Features -->
+<section class="section">
+  <div class="container text-center">
+    <h2 class="section-title">Why Gluten?</h2>
+    <p class="section-subtitle">Gluten bridges the gap between Spark's scalability and native engine performance — no query changes required.</p>
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="feature-icon">⚡</div>
+        <h3>Native Execution</h3>
+        <p>Offloads compute-intensive processing from the JVM to highly optimized native C++ engines for dramatic speedups.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🔌</div>
+        <h3>Drop-in Plugin</h3>
+        <p>Works as a Spark plugin — no changes to your DataFrames, SQL queries, or application code. Just add a JAR.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🔀</div>
+        <h3>Multi-Backend Support</h3>
+        <p>Switch between Velox and ClickHouse backends based on your workload. Extensible to support more native engines.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">📊</div>
+        <h3>Columnar Processing</h3>
+        <p>End-to-end columnar data pipeline with columnar shuffle, avoiding expensive row-columnar conversions.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🛡️</div>
+        <h3>Automatic Fallback</h3>
+        <p>Gracefully falls back to vanilla Spark for unsupported operators, ensuring correctness on every query.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">📈</div>
+        <h3>Full Observability</h3>
+        <p>Native engine metrics are surfaced in the Spark UI, giving you visibility into performance and bottlenecks.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Architecture -->
+<section class="section section-alt">
+  <div class="container text-center">
+    <h2 class="section-title">Architecture</h2>
+    <p class="section-subtitle">Spark physical plans are converted to Substrait and executed by native backends, with results returned via the Spark Columnar API.</p>
+    <img src="/assets/images/gluten_framework.png" alt="Gluten Architecture" class="architecture-img">
+  </div>
+</section>
+
+<!-- Quick Start -->
+<section class="section">
+  <div class="container text-center">
+    <h2 class="section-title">Quick Start</h2>
+    <p class="section-subtitle">Grab a bundle JAR from the <a href="/downloads/">downloads page</a> and enable Gluten with a single Spark configuration change.</p>
+    <div class="code-block">
+      <pre><code>spark-shell \
+  --master yarn --deploy-mode client \
+  --conf spark.plugins=org.apache.gluten.GlutenPlugin \
+  --conf spark.memory.offHeap.enabled=true \
+  --conf spark.memory.offHeap.size=20g \
+  --conf spark.shuffle.manager=org.apache.spark.shuffle.sort.ColumnarShuffleManager \
+  --jars gluten-velox-bundle-spark3.5_2.12-centos_7_x86_64-1.6.0.jar</code></pre>
+    </div>
+    <p style="margin-top:24px;"><a href="https://apache.github.io/gluten/" class="btn btn-secondary" style="display:inline-flex;">Read the full documentation →</a></p>
+  </div>
+</section>
+
+<!-- Performance -->
+<section class="section section-alt">
+  <div class="container text-center">
+    <h2 class="section-title">Performance</h2>
+    <p class="section-subtitle">Benchmarked on TPC-H and TPC-DS at 3TB scale on Intel® Xeon® Platinum 8592+ with Spark 3.3.1.</p>
+    <div class="perf-grid">
+      <div class="perf-card">
+        <img src="/assets/images/velox_tpch-like_sf3000_time_comparison.png" alt="TPC-H Time Comparison" loading="lazy">
+        <div class="perf-caption">TPC-H — Overall 3.34x speedup with Gluten + Velox</div>
+      </div>
+      <div class="perf-card">
+        <img src="/assets/images/velox_tpch-like_sf3000_speedup.png" alt="TPC-H Speedup" loading="lazy">
+        <div class="perf-caption">TPC-H — Up to 23.45x speedup on individual queries</div>
+      </div>
+      <div class="perf-card">
+        <img src="/assets/images/velox_tpcds-like_sf3000_time_comparison.png" alt="TPC-DS Time Comparison" loading="lazy">
+        <div class="perf-caption">TPC-DS — Overall 3.02x speedup with Gluten + Velox</div>
+      </div>
+      <div class="perf-card">
+        <img src="/assets/images/velox_tpcds-like_sf3000_top20_speedup.png" alt="TPC-DS Speedup" loading="lazy">
+        <div class="perf-caption">TPC-DS — Up to 13.75x speedup on individual queries</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Powered By -->
+<section class="section">
+  <div class="container text-center">
+    <h2 class="section-title">Trusted in Production</h2>
+    <p class="section-subtitle">Used by leading technology companies across the globe.</p>
+    <div class="logo-grid">
+      <span>Microsoft</span>
+      <span>Google</span>
+      <span>IBM</span>
+      <span>Alibaba Cloud</span>
+      <span>Bytedance</span>
+      <span>Uber</span>
+      <span>Tencent</span>
+      <span>Meituan</span>
+      <span>Baidu</span>
+      <span>Pinterest</span>
+      <span>Oracle</span>
+      <span>Kyligence</span>
+      <span>BIGO</span>
+      <span>Netease</span>
+      <span>Intel</span>
+    </div>
+    <p style="margin-top:32px;"><a href="/poweredby/" class="btn btn-secondary" style="display:inline-flex;">View all adopters →</a></p>
+  </div>
+</section>
+
+<!-- Latest News -->
+<section class="section section-alt">
+  <div class="container text-center">
+    <h2 class="section-title">Latest News</h2>
+    <div class="news-grid">
+      {% for post in site.posts limit: 3 %}
+      <a href="{{ post.url }}" class="news-card">
+        <div class="news-date">{{ post.date | date: "%B %-d, %Y" }}</div>
+        <h3>{{ post.title }}</h3>
+      </a>
+      {% endfor %}
+    </div>
+    <p style="margin-top:32px;"><a href="/blog/" class="btn btn-secondary" style="display:inline-flex;">All posts →</a></p>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-banner">
+  <h2>Ready to accelerate your Spark workloads?</h2>
+  <p>Join the community and start using Gluten today.</p>
+  <div class="hero-buttons">
+    <a href="https://apache.github.io/gluten/" class="btn btn-primary">Read the Docs</a>
+    <a href="/community/" class="btn btn-secondary">Join the Community</a>
+  </div>
+</section>
+
+<!-- Contributors -->
+<section class="section section-alt text-center">
+  <div class="container">
+    <h2 class="section-title">Thanks to Our Contributors</h2>
+    <p class="section-subtitle">Gluten is built by a vibrant open-source community.</p>
+    <a href="https://github.com/apache/gluten/graphs/contributors" target="_blank" rel="noopener">
+      <img src="/assets/images/gluten_contributors.svg" alt="Contributors" loading="lazy" style="max-width:100%;border-radius:12px;">
+    </a>
+  </div>
+</section>

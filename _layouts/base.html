@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {% include gluten/head.html %}
+</head>
+<body>
+  {% include gluten/navbar.html %}
+
+  <main>
+    {{ content }}
+  </main>
+
+  {% include gluten/footer.html %}
+
+  <script>
+    (function () {
+      var toggle = document.getElementById('navToggle');
+      var links = document.getElementById('navLinks');
+      if (toggle && links) {
+        toggle.addEventListener('click', function () {
+          links.classList.toggle('active');
+        });
+      }
+
+      var themeToggle = document.getElementById('themeToggle');
+      if (themeToggle) {
+        themeToggle.addEventListener('click', function () {
+          var next = document.documentElement.getAttribute('data-theme') === 'light' ? 'dark' : 'light';
+          document.documentElement.setAttribute('data-theme', next);
+          try { localStorage.setItem('gluten-theme', next); } catch (e) {}
+        });
+      }
+    })();
+  </script>
+</body>
+</html>

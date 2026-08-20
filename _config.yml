@@ -21,7 +21,7 @@
 title: Apache Gluten
 email: weitingchen@apache.org
 description:  "Gluten is a middle layer responsible for offloading JVM-based SQL engines' execution to native engines."
-baseurl: "/" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 domain: apache.org
 url: "https://gluten.apache.org" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
@@ -41,6 +41,20 @@ plugins:
   - jekyll-relative-links        # GitHub Pages
 
 logo: "/assets/images/gluten-logo-blue.png"
+
+# Top navigation links used by the custom site layouts (base/page/post).
+# Docs pages under _docs keep the just-the-docs theme navigation.
+nav_links:
+  - title: Documentation
+    url: https://apache.github.io/gluten/
+  - title: Downloads
+    url: /downloads/
+  - title: Blog
+    url: /blog/
+  - title: Community
+    url: /community/
+  - title: Powered By
+    url: /poweredby/
 
 # Exclude from processing.
 # The following items will not be processed, by default.

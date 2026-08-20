@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: site-page
 title: Gluten References
 nav_order: 6
 permalink: /references/

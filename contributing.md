@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: site-page
 title: Contributing to Gluten
 nav_order: 9
 permalink: /contributing/

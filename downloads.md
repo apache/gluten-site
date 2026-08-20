@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: site-page
 title: Downloads
 nav_order: 4
 permalink: /downloads/

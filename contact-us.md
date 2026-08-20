@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: site-page
 title: Community
 nav_order: 10
 permalink: /community/

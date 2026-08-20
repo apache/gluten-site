@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: site-page
 title: Powered by Gluten
 nav_order: 8
 permalink: /poweredby/
