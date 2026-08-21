@@ -40,7 +40,7 @@ plugins:
   - jekyll-readme-index          # GitHub Pages
   - jekyll-relative-links        # GitHub Pages
 
-logo: "/assets/images/gluten-logo-blue.png"
+logo: "/assets/images/gluten-logo.svg"
 
 # Top navigation links used by the custom site layouts (base/page/post).
 # Docs pages under _docs keep the just-the-docs theme navigation.
