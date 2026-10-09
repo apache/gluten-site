@@ -46,7 +46,7 @@ logo: "/assets/images/gluten-logo.svg"
 # Docs pages under _docs keep the just-the-docs theme navigation.
 nav_links:
   - title: Documentation
-    url: https://apache.github.io/gluten/
+    url: /docs/latest/
   - title: Downloads
     url: /downloads/
   - title: Blog
