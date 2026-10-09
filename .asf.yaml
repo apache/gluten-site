@@ -31,9 +31,22 @@ github:
     merge: false
     rebase: false
 
+  rulesets:
+    - name: "Default Branch Protection"
+      type: branch
+      branches:
+        includes:
+          - "~DEFAULT_BRANCH"
+          - "release/*"
+          - "rel/*"
+        excludes: []
+      bypass_teams:
+        - root
+      restrict_deletion: true
+      restrict_force_push: true
 staging:
-   profile: ~
-   whoami: asf-staging
+  profile:
+  whoami: asf-staging
 
 jekyll:
   whoami: main
@@ -45,8 +58,8 @@ publish:
 
 
 notifications:
-  commits:      commits@gluten.apache.org
-  issues:       commits@gluten.apache.org
+  commits: commits@gluten.apache.org
+  issues: commits@gluten.apache.org
   pullrequests: commits@gluten.apache.org
-  jobs:         commits@gluten.apache.org
-  discussions:  dev@gluten.apache.org
+  jobs: commits@gluten.apache.org
+  discussions: dev@gluten.apache.org
