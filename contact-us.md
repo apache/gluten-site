@@ -57,6 +57,7 @@ The project is governed by a Project Management Committee (PMC). The project’s
 | -------------- | ----------------------------------------------------------------------------- | --------------------------------------------- |
 | Arnav Balyan   | [arnavbalyan](https://people.apache.org/phonebook.html?uid=arnavbalyan)       | [ArnavBalyan](https://github.com/ArnavBalyan) |
 | Guangxin Wang  | [wangguangxin](https://people.apache.org/phonebook.html?uid=wangguangxin)     | [WangGuangxin](https://github.com/WangGuangxin) |
+| Jie Yang       | [yangjie01](https://people.apache.org/phonebook.html?uid=yangjie01)           | [LuciferYang](https://github.com/LuciferYang) |
 | Kerwin Zhang   | [kerwinzhang](https://people.apache.org/phonebook.html?uid=kerwinzhang)       | [kerwin-zk](https://github.com/kerwin-zk)     |
 | Mingliang Zhu  | [mingliang](https://people.apache.org/phonebook.html?uid=mingliang)           | [zml1206](https://github.com/zml1206) |
 | Mingyong Xu    | [exmy](https://people.apache.org/phonebook.html?uid=exmy)                     | [exmy](https://github.com/exmy) |
